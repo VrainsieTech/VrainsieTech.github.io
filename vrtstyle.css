@@ -17,9 +17,8 @@
         header {
                 background-position: center;
                 background-size: cover;
-                height:50px;
-                background-image: url(assets/vrtporhdr.png);
-            background-color: #4CAF50;
+                height:100px;
+                
             color: white;
             padding: 1rem 0;
             text-align: center;
