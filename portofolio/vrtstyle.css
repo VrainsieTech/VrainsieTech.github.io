@@ -1,0 +1,202 @@
+
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #F3F4F6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section:nth-child(odd) {
+            background-color: #FFFFFF;
+        }
+
+        section:nth-child(even) {
+            background-color: #F9FAFB;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+    /* Header Animation */
+    header {
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Section Animation */
+    section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideUp 1.5s ease-out forwards;
+    }
+
+    section:nth-child(odd) {
+        animation-delay: 0.5s;
+    }
+
+    section:nth-child(even) {
+        animation-delay: 0.8s;
+    }
+
+    /* Contact Form Animation */
+    #contact input, #contact textarea, #contact button {
+        animation: fadeIn 1s ease-in;
+        animation-fill-mode: both;
+    }
+    #contact input:nth-child(1) { animation-delay: 0.2s; }
+    #contact textarea { animation-delay: 0.4s; }
+    #contact button { animation-delay: 0.6s; }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+/* General Reset */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    /* For laptops and desktops */
+    body {
+        font-size: 15px;
+    }
+    section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    /* For tablets in landscape orientation */
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    section {
+        padding: 1rem;
+    }
+    #skills ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For tablets in portrait orientation */
+    body {
+        font-size: 14px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+    #portfolio .project {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* For smartphones */
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: 0.8rem;
+    }
+    section {
+        padding: 0.8rem;
+    }
+    #contact input, #contact textarea, #contact button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #contact textarea {
+        height: 100px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* For smaller smartphones (e.g., iPhone SE) */
+    header h1 {
+        font-size: 1.2rem;
+    }
+    header p {
+        font-size: 0.7rem;
+    }
+    #contact button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    /* For landscape orientation on small screens (e.g., tablets/phones) */
+    header {
+        padding: 0.5rem 0;
+    }
+    section {
+        padding: 0.5rem;
+    }
+}
