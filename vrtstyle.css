@@ -52,6 +52,7 @@
             margin: 3px auto;
             border:1px solid inherit;
             border-radius:5px;
+                background-image: radial-gradient(#924DBF, #7338A0, #4A2574);
         }
 
         section:nth-child(odd) {
