@@ -15,6 +15,10 @@
 
         /* Header Styles */
         header {
+                background-position: center;
+                background-size: cover;
+                height:50px;
+                background-image: url(assets/hdrcover.png);
             background-color: #4CAF50;
             color: white;
             padding: 1rem 0;
@@ -62,7 +66,7 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #4CAF50;
+            background-color: #0F0529;
             color: white;
             font-size: 0.9rem;
         }
