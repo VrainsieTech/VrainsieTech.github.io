@@ -34,7 +34,9 @@
             font-size: 1.2rem;
             margin-top: 0.5rem;
         }
-
+        ul {
+                margin-left:25px !important;
+        }
         h3 {
                 text-align: center;
                 border:none;
@@ -147,11 +149,7 @@ html {
     section {
         padding: 1rem;
     }
-    #skills ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+    
 }
 
 @media (max-width: 768px) {
@@ -165,9 +163,7 @@ html {
     header p {
         font-size: 0.9rem;
     }
-    #skills ul {
-        grid-template-columns: 1fr;
-    }
+    
     #portfolio .project {
         margin-bottom: 1.5rem;
     }
